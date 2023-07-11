@@ -57,3 +57,11 @@ a {
     font-weight: 700;
     color: $accent;
 }
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.none {
+    display: none;
+}
