@@ -213,6 +213,19 @@ a:hover {
 
 .benefits {
   padding: 120px 0;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  line-height: 1.15;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .benefits__row {
@@ -234,6 +247,23 @@ a:hover {
   line-height: 1.35;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.apartments {
+  position: relative;
+}
+.apartments::before {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  line-height: 1.15;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: -25px;
 }
 
 .apartments__title {
@@ -371,7 +401,20 @@ a:hover {
 }
 
 .video {
+  position: relative;
   text-align: center;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  line-height: 1.15;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .video__link {
@@ -407,7 +450,22 @@ a:hover {
 }
 
 .section-map {
+  position: relative;
   padding: 180px 0;
+}
+.section-map::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  line-height: 1.15;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: 180px;
+  line-height: 1;
 }
 
 .section-map__title {
