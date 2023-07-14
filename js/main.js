@@ -7,3 +7,19 @@ navBtn.onclick = function () {
     nav.classList.toggle('header__top-row--mobile')
     document.body.classList.toggle('no-scroll');
 }
+
+/* Phone Mask */
+
+mask('[data-tel-input]');
+
+// Удаление +, если нет ничего, кроме плюса
+
+const phoneInputs = document.querySelectorAll('[data-tel-input]');
+phoneInputs.forEach((input)=>{
+	input.addEventListener('input', ()=>{
+		if (input.value == '+') input.value = '';
+	})
+	input.addEventListener('blur', ()=>{
+		if (input.value == '+') input.value = '';
+	})
+});
